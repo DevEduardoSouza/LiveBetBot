@@ -4,4 +4,4 @@ async function name() {
   scrapeData();
 }
 
-// name();
+name();

@@ -1,5 +1,7 @@
 import { initializeBrowser } from "../services/browserService.js";
 import { configs } from "../config/configs.js";
+import { Match, Team } from "../models/match.js";
+import * as cheerio from "cheerio";
 
 const URL = configs.bet365.url;
 
@@ -9,20 +11,46 @@ export async function scrapeData() {
     await page.goto(URL);
 
     await page.waitForLoadState("networkidle");
-    // await page.waitForTimeout(3000);
-
     await page.locator(".iip-IntroductoryPopup_Cross").click();
 
-    // Todos os nomes das ligas aovivo
-    const legue = await page
-      .locator(".ovm-CompetitionHeader_Name.ovm-CompetitionHeader_Name-faves")
-      .allTextContents();
+    const elementHandles = await page.$$(
+      ".ovm-Competition.ovm-Competition-open"
+    );
 
-    console.log(legue);
-    // await page.pause();
+    function name(htmlContent) {
+      const $ = cheerio.load(htmlContent);
 
-    // await page.screenshot({ path: "exemplo.png" });
-    // console.log("Print feito com sucesso:");
+      $(".ovm-Competition.ovm-Competition-open").each((i, value) => {
+        const league = $(value)
+          .find(".ovm-CompetitionHeader_Name.ovm-CompetitionHeader_Name-faves")
+          .text();
+        const timeHome = $(value)
+          .find(
+            ".ovm-FixtureDetailsTwoWay_TeamsAndScoresInner > div > div:nth-child(1)"
+          )
+          .text();
+        const timeAway = $(value)
+          .find(
+            ".ovm-FixtureDetailsTwoWay_TeamsAndScoresInner > div > div:nth-child(2)"
+          )
+          .text();
+
+        console.log(league);
+        console.log(timeHome);
+        console.log(timeAway);
+
+        console.log("\n\n");
+        // Se necessário, adicione mais operações aqui
+      });
+    }
+
+    for (const elementHandle of elementHandles) {
+      const parteDoHtml = await page.evaluate(
+        (element) => element.innerHTML,
+        elementHandle
+      );
+      name(parteDoHtml);
+    }
 
     await page.close();
   } catch (error) {
