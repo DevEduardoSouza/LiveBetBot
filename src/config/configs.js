@@ -1,6 +1,6 @@
 export const configs = {
   bet365: {
-    url: "https://www.bet365.com/#/IP/B1",
+    url: "https://www.bet365.com/#/IP/B151",
     name: "bet365.com",
     extraHTTPHeaders: {
       Accept: "*/*",
