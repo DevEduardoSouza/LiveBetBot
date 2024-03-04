@@ -1,7 +1,7 @@
 export const configs = {
-  bet365: {
-    url: "https://www.bet365.com/#/IP/B151",
-    name: "bet365.com",
+  googleMaps: {
+    url: "https://www.google.com.br/maps/preview",
+    name: "Google Maps",
     extraHTTPHeaders: {
       Accept: "*/*",
       "Accept-Encoding": "gzip, deflate, br",
