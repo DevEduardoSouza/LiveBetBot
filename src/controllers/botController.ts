@@ -1,7 +1,6 @@
-import { initializeBrowser } from "../services/browserService.js";
-import { configs } from "../config/configs.js";
+import { initializeBrowser } from "../services/browserService";
 
-const URL = configs.googleMaps.url;
+const URL = "https://www.bet365.com/#/IP/B1";
 
 export async function scrapeData() {
   try {
@@ -9,8 +8,6 @@ export async function scrapeData() {
     await page.goto(URL);
     await page.waitForLoadState("networkidle");
     await page.waitForTimeout(2000);
-
-    // await page.close();
   } catch (error) {
     console.error("Ocorreu um erro durante a raspagem:", error);
   }
