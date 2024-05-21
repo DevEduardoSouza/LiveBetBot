@@ -3,7 +3,7 @@
 ## Descrição
 Este projeto é um scraper de dados desenvolvido com TypeScript, Node.js, Express e JSDOM. O objetivo do projeto é coletar informações de partidas esportivas de um site específico e retornar esses dados em um formato estruturado.
 
-# LiveBetBot API Documentatação 
+# LiveBetBot API Documentation 
 
 
 1. **Clone the repository:**
@@ -33,9 +33,7 @@ cd LiveBetBot
 
 ## Endpoints
 
-### 1. Get Products by Keyword
-
-Retrieves products from Amazon based on a keyword.
+### 1. Get Odds aovivo
 
 - **URL**: `/api/odds`
 - **Method**: `GET`
