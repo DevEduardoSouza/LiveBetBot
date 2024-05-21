@@ -3,7 +3,7 @@ import { firefox } from "playwright";
 
 export const getHtmlPage = async (url: string) => {
   try {
-    const browser = await firefox.launch({ headless: false });
+    const browser = await firefox.launch({ headless: true });
     const page = await browser.newPage();
 
     await page.goto(url, { waitUntil: "networkidle" });
