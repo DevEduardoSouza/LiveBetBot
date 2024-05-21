@@ -9,7 +9,7 @@ Este projeto é um scraper de dados desenvolvido com TypeScript, Node.js, Expres
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/DevEduardoSouza/MapQuest.git
+git clone https://github.com/DevEduardoSouza/LiveBetBot.git
 ```
 
 2. **Navigate to the backend directory:**
