@@ -1,6 +1,6 @@
 export const configs = {
   siteName: process.env.SITE_NAME,
-  siteUrl: process.env.SITE_URL,
+  siteUrl: process.env.SITE_URL || "https://www.bet365.com/#/IP/B1",
   siteKeywords: process.env.SITE_KEYWORDS || "test",
   siteLanguage: process.env.SITE_LANGUAGE || "pt-BR",
   headers: {
