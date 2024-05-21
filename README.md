@@ -3,7 +3,7 @@
 ## Descrição
 Este projeto é um scraper de dados desenvolvido com TypeScript, Node.js, Express e JSDOM. O objetivo do projeto é coletar informações de partidas esportivas de um site específico e retornar esses dados em um formato estruturado.
 
-# Bet365 API Documentatação 
+# LiveBetBot API Documentatação 
 
 
 1. **Clone the repository:**
