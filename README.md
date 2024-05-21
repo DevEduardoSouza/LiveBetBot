@@ -41,23 +41,23 @@ cd LiveBetBot
   - **Code**: `200 OK`
   - **Content**: 
     ```json
-     {
-    		"competitionName": "Série A Sub-20",
-    		"timeMatch": "00:00",
-    		"teams": {
-    			"home": {
-    				"name": "Bahia Sub-20",
-    				"score": "0",
-    				"odds": "5.50"
-    			},
-    			"away": {
-    				"name": "Palmeiras Sub-20",
-    				"score": "0",
-    				"odds": "1.50"
-    			},
-    			"drawOdds": "3.90"
-    		}
-    	}
+       {
+  		"competitionName": "Alemanha - Landesliga",
+  		"timeMatch": "26:44",
+  		"teams": {
+  			"home": {
+  				"name": "ATS Buntentor",
+  				"score": "1",
+  				"odds": "2.10"
+  			},
+  			"away": {
+  				"name": "1. FC Burg",
+  				"score": "1",
+  				"odds": "2.75"
+  			},
+  			"drawOdds": "4.00"
+  		}
+  	}
     ```
 - **Error Response**:
   - **Code**: `400 Bad Request`
