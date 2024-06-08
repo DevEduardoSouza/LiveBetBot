@@ -9,13 +9,13 @@ Este projeto é um scraper de dados desenvolvido com TypeScript, Node.js, Expres
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/DevEduardoSouza/LiveBetBot.git
+git clone https://github.com/DevEduardoSouza/live-bet-bot.git
 ```
 
 2. **Navigate to the backend directory:**
 
 ```bash
-cd LiveBetBot
+cd live-bet-bot
 ```
 
 
